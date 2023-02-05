@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>To Do list 🏀</title>
+
+    <script>
+        let audio = new Audio()
+        audio.src = 'feet.mp3'
+
+    </script>
+  </head>
+
+  <body>
+    <h1 class="hidden"></h1>
+      <form class="loginform">
+          <input required type="text" placeholder="What is your name?" />
+          <button>🏀</button>
+      </form>
+      <div class="time"></div>
+        <h2 id="clock"></h2>
+    </div>
+    <div class="toDo">
+        <h4>To Do List</h4>
+        <form class="toDoform">
+            <input id="list" type="text" required placeholder="Write your To-Do-List!"/>
+        </form>
+        <ul class="toDolist"> </ul>
+    </div>
+
+    <div id="quote">
+        
+        <span class="span1"></span>
+        <span class="span2"></span>
+    </div>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+    <input type="button" value="PLAY" onclick ='audio.play()' id="play">
+    <input type="button" value="PAUSE" onclick="audio.pause()" id="pause">
+     <span id="musicimage" style="font-size:100px">👇</span>
+    <script src="app.js"></script>
+    <script src="todo.js"></script>
+    <script src="quotes.js"></script>
+    <script src="background.js"></script>
+    <script src="weather.js"></script>
+    <script src="clock.js"></script>
+    <script src="audio.js"></script>
+  </body>
+</html>
