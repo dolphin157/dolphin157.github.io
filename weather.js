@@ -7,6 +7,7 @@ let drizzle ="";
 let snow ="";
 let atmosphere="";
 let clear="";
+let mist="";
 
 
 
@@ -42,6 +43,9 @@ function onGeoOk(position){
             }
             else if(weatherInfo === "Clear"){
                 clear = "☀️";
+            }
+            else if(weatherInfo === "Mist"){
+                mist = "💦";
             }
 
             weather.innerText =  `${clouds} / ${data.main.temp}°`;
