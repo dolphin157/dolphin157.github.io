@@ -67,15 +67,15 @@ img{
 }
 
 #weather{
-    position: absolute;
-    right:1760px;
-    bottom:840px;
+    position: relative;
+    right:850px;
+    bottom:710px;
 }
 
 #clock{
     position:absolute;
-    bottom:817px;
-    right:1690px;
+    bottom:790px;
+    right:1840px;
 }
 
 h4{
