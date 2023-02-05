@@ -8,8 +8,7 @@ let snow ="";
 let atmosphere="";
 let clear="";
 let mist="";
-
-
+let finalwethar;
 
 function onGeoOk(position){
     const lat = position.coords.latitude;
@@ -48,7 +47,7 @@ function onGeoOk(position){
                 mist = "💦";
             }
 
-            weather.innerText =  `${clouds} / ${data.main.temp}°`;
+            weather.innerText =  `${weatherInfo} / ${data.main.temp}°`;
     });
 }
 
