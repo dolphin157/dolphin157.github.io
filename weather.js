@@ -20,31 +20,38 @@ function onGeoOk(position){
             const weather = document.querySelector("#weather span:first-child");
             const city = document.querySelector("#weather span:last-child");
             city.innerText = data.name;
-            weatherInfo = data.weather[0].main;
+            let weatherInfo = data.weather[0].main;
             if(weatherInfo === "Clouds"){
                  clouds = "☁️";
+                 weatherInfo = clouds;
             }
             else if(weatherInfo === "Rain"){
                 rain = "🌧";
-
+                weatherInfo = rain;
             }
             else if(weatherInfo === "Thunderstorm"){
                 thunderstorm = "⚡️";
+                weatherInfo = thunderstorm;
             }
             else if(weatherInfo === "Drizzle"){
                 drizzle = "🌦";
+                weatherInfo = drizzle;
             }
             else if(weatherInfo === "Snow"){
                 snow = "❄️";
+                weatherInfo = snow;
             }
             else if(weatherInfo === "Atmosphere"){
                 atmosphere = "🌤";
+                weatherInfo = atmosphere;
             }
             else if(weatherInfo === "Clear"){
                 clear = "☀️";
+                weatherInfo = clear;
             }
             else if(weatherInfo === "Mist"){
                 mist = "💦";
+                weatherInfo = mist;
             }
 
             weather.innerText =  `${weatherInfo} / ${data.main.temp}°`;
